@@ -7,7 +7,7 @@
 
 var EXPRESSIONS = [
     /^https?:\/\/img\.shields\.io/,
-    /^https?:\/\/(?:(?:www|api)\.)?travis-ci\.(?:org|com)\/.*\.(?:svg|png)(?:\?|$)/,
+    /^https?:\/\/(?:(?:www|api)\.)?travis-ci\.org\/.*\.(?:svg|png)(?:\?|$)/,
     /^https?:\/\/(?:www\.)?david-dm\.org(?:\/.+){2}\.(?:svg|png)/,
     /^https?:\/\/(?:www\.)?nodei\.co(?:\/.+){2}\.(?:svg|png)(?:\?|$)/,
     /^https?:\/\/inch-ci.org(?:\/.+){3}\.(?:svg|png)(?:\?|$)/

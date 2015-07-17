@@ -1,0 +1,17 @@
+{
+  "name": "is-badge",
+  "version": "0.0.0",
+  "description": "Check if `url` is a badge",
+  "license": "MIT",
+  "keywords": [
+    "badge",
+    "shield",
+    "travis",
+    "david",
+    "nodei"
+  ],
+  "repository": "wooorm/is-badge",
+  "scripts": [
+    "index.js"
+  ]
+}

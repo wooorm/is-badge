@@ -1,0 +1,6 @@
+build/
+components/
+coverage/
+build.js
+is-badge.js
+is-badge.min.js

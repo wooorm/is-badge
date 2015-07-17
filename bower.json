@@ -1,0 +1,35 @@
+{
+  "name": "is-badge",
+  "main": "is-badge.js",
+  "description": "Check if `url` is a badge",
+  "license": "MIT",
+  "keywords": [
+    "badge",
+    "shield",
+    "travis",
+    "david",
+    "nodei"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wooorm/is-badge.git"
+  },
+  "authors": [
+    "Titus Wormer <tituswormer@gmail.com>"
+  ],
+  "ignore": [
+    ".*",
+    "*.log",
+    "*.md",
+    "build/",
+    "components/",
+    "coverage/",
+    "node_modules/",
+    "build.js",
+    "example.js",
+    "index.js",
+    "test.js",
+    "component.json",
+    "package.json"
+  ]
+}

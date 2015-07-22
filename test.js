@@ -30,6 +30,10 @@ describe('isBadge(url)', function () {
         ), true);
 
         assert.equal(isBadge(
+            'https://secure.travis-ci.org/wooorm/foo.png'
+        ), true);
+
+        assert.equal(isBadge(
             'https://api.travis-ci.org/wooorm/foo.png?branch=1.1.0'
         ), true);
 
@@ -108,5 +112,77 @@ describe('isBadge(url)', function () {
             'https://inch-ci.org/github/wooorm/foo.svg?' +
             'branch=master&style=shields'
         ), true);
+    });
+
+    it('should work for badge.fury.io', function () {
+        assert.equal(isBadge(
+            'http://badge.fury.io/js/engine.io.svg'
+        ), true);
+
+        assert.equal(isBadge(
+            'https://badge.fury.io/gh/substack%2Fnode-browserify.svg'
+        ), true);
+
+        assert.equal(isBadge(
+            'https://badge.fury.io/gh/substack%2Fnode-browserify'
+        ), false);
+
+        assert.equal(isBadge(
+            'https://badge.fury.io/gh/substack/node-browserify.svg'
+        ), false);
+    });
+
+    it('should work for testling-ci', function () {
+        assert.equal(isBadge(
+            'https://ci.testling.com/substack/dnode.png'
+        ), true);
+
+        assert.equal(isBadge(
+            'https://ci.testling.com/_/images/testling_mission_control.png'
+        ), false);
+
+        assert.equal(isBadge(
+            'https://ci.testling.com/guide/tape'
+        ), false);
+    });
+
+    it('should work for sauce-labs', function () {
+        assert.equal(isBadge(
+            'https://saucelabs.com/buildstatus/vuejs'
+        ), true);
+
+        assert.equal(isBadge(
+            'https://saucelabs.com/browser-matrix/vuejs.svg'
+        ), true);
+
+        assert.equal(isBadge(
+            'https://docs.saucelabs.com/images/sauce-labs.bbed5298.png'
+        ), false);
+
+        assert.equal(isBadge(
+            'https://saucelabs.com/home/logo_eventbrite2x.png'
+        ), false);
+    });
+
+    it('should work for coveralls', function () {
+        assert.equal(isBadge(
+            'https://coveralls.io/repos/jquery/esprima/badge.png'
+        ), true);
+
+        assert.equal(isBadge(
+            'https://coveralls.io/repos/jquery/esprima/badge.svg'
+        ), true);
+
+        assert.equal(isBadge(
+            'https://coveralls.io/repos/jquery/esprima/badge.svg?branch=master'
+        ), true);
+
+        assert.equal(isBadge(
+            'https://coveralls.io/assets/home_bitbucket-9172913f63c2492acfd0b67d9f0ad404.png'
+        ), false);
+
+        assert.equal(isBadge(
+            'https://coveralls.io/r/google/yapf'
+        ), false);
     });
 });

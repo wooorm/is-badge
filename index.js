@@ -12,7 +12,7 @@ var EXPRESSIONS = [
     /^https?:\/\/inch-ci\.org(?:\/.+){3}\.(?:svg|png)(?:\?|$)/,
     /^https?:\/\/badge\.fury\.io(?:\/[^/]+){2}\.(?:svg|png)(?:\?|$)/,
     /^https?:\/\/ci\.testling\.com(?:\/[^/]+){2}\.(?:svg|png)(?:\?|$)/,
-    /^https?:\/\/saucelabs\.com(?:\/[^/]+){2}(?:\.(?:svg|png))?(?:\?|$)/,
+    /^https?:\/\/saucelabs\.com\/(?:buildstatus|browser-matrix)\//,
     /^https?:\/\/coveralls\.io\/.*\/badge\.(?:svg|png)(?:\?|$)/
 ];
 

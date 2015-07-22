@@ -7,10 +7,14 @@
 
 var EXPRESSIONS = [
     /^https?:\/\/img\.shields\.io/,
-    /^https?:\/\/(?:(?:www|api)\.)?travis-ci\.org\/.*\.(?:svg|png)(?:\?|$)/,
+    /^https?:\/\/(?:(?:www|api|secure)\.)?travis-ci\.org\/.*\.(?:svg|png)(?:\?|$)/,
     /^https?:\/\/(?:www\.)?david-dm\.org(?:\/.+){2}\.(?:svg|png)/,
     /^https?:\/\/(?:www\.)?nodei\.co(?:\/.+){2}\.(?:svg|png)(?:\?|$)/,
-    /^https?:\/\/inch-ci.org(?:\/.+){3}\.(?:svg|png)(?:\?|$)/
+    /^https?:\/\/inch-ci\.org(?:\/.+){3}\.(?:svg|png)(?:\?|$)/,
+    /^https?:\/\/badge\.fury\.io(?:\/[^/]+){2}\.(?:svg|png)(?:\?|$)/,
+    /^https?:\/\/ci\.testling\.com(?:\/[^/]+){2}\.(?:svg|png)(?:\?|$)/,
+    /^https?:\/\/saucelabs\.com(?:\/[^/]+){2}(?:\.(?:svg|png))?(?:\?|$)/,
+    /^https?:\/\/coveralls\.io\/.*\/badge\.(?:svg|png)(?:\?|$)/
 ];
 
 /*

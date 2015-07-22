@@ -139,7 +139,6 @@
     "else"
   ],
   "requireLineFeedAtFileEnd": true,
-  "maximumLineLength": 78,
   "requireCapitalizedConstructors": true,
   "safeContextKeyword": "self",
   "requireDotNotation": true,

@@ -33,16 +33,15 @@
     "tape": "^4.0.0"
   },
   "scripts": {
-    "test-api": "node test.js",
-    "test-coverage": "istanbul cover test.js",
-    "test": "npm run test-api",
+    "build-md": "remark . LICENSE --output --quiet --frail",
+    "build-bundle": "browserify index.js --bare -s isBadge > is-badge.js",
+    "build-mangle": "esmangle is-badge.js > is-badge.min.js",
+    "build": "npm run build-md && npm run build-bundle && npm run build-mangle",
     "lint-api": "eslint .",
     "lint-style": "jscs --reporter inline .",
     "lint": "npm run lint-api && npm run lint-style",
-    "make": "npm run lint && npm run test-coverage",
-    "build-md": "remark . LICENSE --output --quiet --frail",
-    "build-bundle": "browserify index.js --bare -s isBadge > is-badge.js",
-    "postbuild-bundle": "esmangle is-badge.js > is-badge.min.js",
-    "build": "npm run build-md && npm run build-bundle"
+    "test-api": "node test.js",
+    "test-coverage": "istanbul cover test.js",
+    "test": "npm run build && npm run lint && npm run test-coverage"
   }
 }

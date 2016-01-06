@@ -27,13 +27,16 @@
     "jscs": "^2.0.0",
     "jscs-jsdoc": "^1.0.0",
     "remark": "^3.0.0",
+    "remark-comment-config": "^2.0.2",
     "remark-github": "^2.0.0",
     "remark-lint": "^2.0.2",
+    "remark-slug": "^3.0.1",
+    "remark-validate-links": "^2.0.2",
     "remark-yaml-config": "^2.0.0",
     "tape": "^4.0.0"
   },
   "scripts": {
-    "build-md": "remark . LICENSE --output --quiet --frail",
+    "build-md": "remark . --quiet --frail",
     "build-bundle": "browserify index.js --bare -s isBadge > is-badge.js",
     "build-mangle": "esmangle is-badge.js > is-badge.min.js",
     "build": "npm run build-md && npm run build-bundle && npm run build-mangle",

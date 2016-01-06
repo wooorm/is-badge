@@ -1,7 +1,4 @@
----
-remark:
-  setext: true
----
+<!--remark setext-->
 
 <!--lint disable no-multiple-toplevel-headings -->
 

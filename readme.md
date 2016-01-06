@@ -3,7 +3,10 @@
 Check if `url` is a badge. Supports [`shields.io`](http://shields.io),
 [`travis-ci`](https://docs.travis-ci.com/user/status-images/),
 [`david-dm`](https://david-dm.org), [`nodei.co`](https://nodei.co),
-and [`inch-ci`](https://inch-ci.org/help/badge).
+[`inch-ci`](https://inch-ci.org/help/badge), [`fury.io`](http://badge.fury.io),
+[`testling`](https://ci.testling.com/guide/quick_start#badge),
+[`saucelabs`](https://wiki.saucelabs.com/display/DOCS/Using+Status+Badges+and+the+Browser+Matrix+Widget+to+Monitor+Test+Results),
+and [`coveralls`](https://coveralls.io).
 
 ## Installation
 

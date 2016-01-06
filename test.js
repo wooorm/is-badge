@@ -315,5 +315,41 @@ test('isBadge(url)', function (t) {
         st.end();
     });
 
+    t.test('gitter', function (st) {
+        st.equal(
+            isBadge('https://badges.gitter.im/foo/bar.png'),
+            true,
+            'ok: png'
+        );
+
+        st.equal(
+            isBadge('https://badges.gitter.im/foo/bar.svg'),
+            true,
+            'ok: svg'
+        );
+
+        st.equal(
+            isBadge(
+                'https://docs.saucelabs.com/images/sauce-labs.bbed5298.png'
+            ),
+            false,
+            'not ok: w/o project'
+        );
+
+        st.equal(
+            isBadge('https://badges.gitter.im/foo/bar'),
+            false,
+            'not ok: w/o extension'
+        );
+
+        st.equal(
+            isBadge('https://badges.gitter.im/'),
+            false,
+            'not ok: w/o project'
+        );
+
+        st.end();
+    });
+
     t.end();
 });

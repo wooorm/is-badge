@@ -15,7 +15,8 @@ var EXPRESSIONS = [
     /^https?:\/\/badge\.fury\.io(?:\/[^/]+){2}\.(?:svg|png)(?:\?|$)/,
     /^https?:\/\/ci\.testling\.com(?:\/[^/]+){2}\.(?:svg|png)(?:\?|$)/,
     /^https?:\/\/saucelabs\.com\/(?:buildstatus|browser-matrix)\//,
-    /^https?:\/\/coveralls\.io\/.*\/badge\.(?:svg|png)(?:\?|$)/
+    /^https?:\/\/coveralls\.io\/.*\/badge\.(?:svg|png)(?:\?|$)/,
+    /^https?:\/\/badges\.gitter\.im(?:\/.+){2}\.(?:svg|png)/
 ];
 
 /*

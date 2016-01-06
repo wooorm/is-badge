@@ -6,7 +6,7 @@ Check if `url` is a badge. Supports [`shields.io`](http://shields.io),
 [`inch-ci`](https://inch-ci.org/help/badge), [`fury.io`](http://badge.fury.io),
 [`testling`](https://ci.testling.com/guide/quick_start#badge),
 [`saucelabs`](https://wiki.saucelabs.com/display/DOCS/Using+Status+Badges+and+the+Browser+Matrix+Widget+to+Monitor+Test+Results),
-and [`coveralls`](https://coveralls.io).
+[`coveralls`](https://coveralls.io), and [`gitter`](https://gitter.im).
 
 ## Installation
 

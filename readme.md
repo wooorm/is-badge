@@ -11,8 +11,7 @@ david-dm, nodei.co, and inch-ci.
 npm install is-badge
 ```
 
-**is-badge** is also available for [bower](http://bower.io/#install-packages),
-[component](https://github.com/componentjs/component), [duo](http://duojs.org/#getting-started),
+**is-badge** is also available for [component](https://github.com/componentjs/component), [duo](http://duojs.org/#getting-started),
 and for AMD, CommonJS, and globals ([uncompressed](is-badge.js) and
 [compressed](is-badge.min.js)).
 

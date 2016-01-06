@@ -11,9 +11,9 @@ david-dm, nodei.co, and inch-ci.
 npm install is-badge
 ```
 
-**is-badge** is also available for [duo](http://duojs.org/#getting-started),
-and for AMD, CommonJS, and globals ([uncompressed](is-badge.js) and
-[compressed](is-badge.min.js)).
+**is-badge** is also available for
+[duo](http://duojs.org/#getting-started), and as an AMD, CommonJS, and
+globals module, [uncompressed and compressed](https://github.com/wooorm/is-badge/releases).
 
 ## Usage
 

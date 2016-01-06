@@ -3,3 +3,5 @@
 components/
 coverage/
 node_modules/
+is-badge.js
+is-badge.min.js

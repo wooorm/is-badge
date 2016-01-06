@@ -8,3 +8,12 @@ node_js:
 - iojs
 sudo: false
 after_script: npm install codecov.io && cat ./coverage/lcov.info | codecov
+deploy:
+  provider: releases
+  api_key:
+    secure: PLVga0K6A4TCmRo0f1QMrCkyz23bsDlj7dsktVob3t9Gusuxj1Jd0UKP/TBJn2RAYnVJoIaYGRN3McV2aD6fEvy5fYOTs2L9FTWEyidqw0hQ0qfbv+Iq7zJ2W59sx8+ceTD35bJ3U5EuGhYslE1Jze2GpO680k/33bpeuARMkq+KecImU4HO4ILbyElIlW4Ci/HEtgZ/5s0Gj78C3vvvbYB+i7hgJHW4rd5LbMpoNNdOYK3wlB/V/EVq0Luj07hYIkz+5S/Tm2cpbotsaQccAHE2gNFL6rjiEARWzjcXI98K20uH0AgiUbbrGFb7bIPWT/uT49wKYs4tqINBkFC8FFnpPzcULn2Q35SqWhQJAQGior537GT59Q1EggEzvqWH6HQ2J6Dftc9AW//7So9t8IVfBgSfyoq+Ybh7fk7nAV9s87IXpWPVrnuVMa+R3x3m3r9thbECs9HD4cfFpLVWLylRLIjBOht8/dxnMsuGfFpJsAnVaq4JPaA9slcAVF3FG3HRIZHMn5WLEGsxZOtcr17xARPbpcNl4R7+XqRa41dhS2WA0gnczRtL7ApVFcblWdzx21uaQ0dmQj2G8ln+CGWAdXLQnW0fQ3goJZ9b5+YFgIYPIBzmhStdI7igqnXS7YNtLiMdy3GabNBOw8PRkNWy5zexkNBZnmTz6wGbmB0=
+  file:
+    - "is-badge.js"
+    - "is-badge.min.js"
+  on:
+    tags: true

@@ -26,10 +26,10 @@
     "istanbul": "^0.3.0",
     "jscs": "^1.0.0",
     "jscs-jsdoc": "^1.0.0",
-    "mdast": "^0.27.0",
-    "mdast-github": "^0.3.1",
-    "mdast-lint": "^0.4.1",
-    "mdast-yaml-config": "^0.2.0",
+    "remark": "^3.0.0",
+    "remark-github": "^2.0.0",
+    "remark-lint": "^2.0.2",
+    "remark-yaml-config": "^2.0.0",
     "mocha": "^2.0.0"
   },
   "scripts": {
@@ -42,7 +42,7 @@
     "lint-style": "jscs --reporter inline .",
     "lint": "npm run lint-api && npm run lint-style",
     "make": "npm run lint && npm run test-coverage",
-    "build-md": "mdast . LICENSE --output --quiet",
+    "build-md": "remark . LICENSE --output --quiet --frail",
     "build-bundle": "browserify index.js --bare -s isBadge > is-badge.js",
     "postbuild-bundle": "esmangle is-badge.js > is-badge.min.js",
     "build": "npm run build-md && npm run build-bundle"

@@ -42,4 +42,4 @@ Throws: `Error` — When `url` is not a string.
 
 ## License
 
-[MIT](LICENSE) @ [Titus Wormer](http://wooorm.com)
+[MIT](LICENSE) © [Titus Wormer](http://wooorm.com)

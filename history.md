@@ -1,5 +1,5 @@
 ---
-mdast:
+remark:
   setext: true
 ---
 

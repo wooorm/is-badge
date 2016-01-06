@@ -1,7 +1,9 @@
 # is-badge [![Build Status](https://img.shields.io/travis/wooorm/is-badge.svg?style=flat)](https://travis-ci.org/wooorm/is-badge) [![Coverage Status](https://img.shields.io/coveralls/wooorm/is-badge.svg?style=flat)](https://coveralls.io/r/wooorm/is-badge?branch=master)
 
-Check if `url` is a badge. Supports shields.io, travis-ci,
-david-dm, nodei.co, and inch-ci.
+Check if `url` is a badge. Supports [`shields.io`](http://shields.io),
+[`travis-ci`](https://docs.travis-ci.com/user/status-images/),
+[`david-dm`](https://david-dm.org), [`nodei.co`](https://nodei.co),
+and [`inch-ci`](https://inch-ci.org/help/badge).
 
 ## Installation
 

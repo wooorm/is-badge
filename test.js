@@ -292,12 +292,6 @@ test('isBadge(url)', function (t) {
     );
 
     st.equal(
-      isBadge('https://docs.saucelabs.com/images/sauce-labs.bbed5298.png'),
-      false,
-      'not ok: w/o project'
-    );
-
-    st.equal(
       isBadge('https://badges.gitter.im/foo/bar'),
       false,
       'not ok: w/o extension'
@@ -307,6 +301,40 @@ test('isBadge(url)', function (t) {
       isBadge('https://badges.gitter.im/'),
       false,
       'not ok: w/o project'
+    );
+
+    st.end();
+  });
+
+  t.test('codecov', function (st) {
+    st.equal(
+      isBadge('https://codecov.io/gh/wooorm/afinn-111/branch/master/graph/badge.svg'),
+      true,
+      'ok: svg'
+    );
+
+    st.equal(
+      isBadge('https://codecov.io/gh/wooorm/afinn-111/branch/master/graph/badge.png'),
+      false,
+      'not ok: png'
+    );
+
+    st.equal(
+      isBadge('https://codecov.io/gh/wooorm/afinn-111/graph/badge.svg'),
+      true,
+      'ok: without branch'
+    );
+
+    st.equal(
+      isBadge('https://codecov.io/gh/wooorm/afinn-111/badge.svg'),
+      true,
+      'ok: without `graph`'
+    );
+
+    st.equal(
+      isBadge('https://codecov.io/gh/wooorm/badge.svg'),
+      false,
+      'not ok: without project'
     );
 
     st.end();

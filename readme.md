@@ -3,7 +3,8 @@
 Check if `url` is a badge.  Supports [`shields.io`][shields],
 [`travis-ci`][travis-ci], [`david-dm`][david], [`nodei.co`][nodei],
 [`inch-ci`][inch], [`fury.io`][fury], [`testling`][testling],
-[`saucelabs`][sauce], [`coveralls`][coveralls], and [`gitter`][gitter].
+[`saucelabs`][sauce], [`coveralls`][coveralls], [`codecov`][codecov-ci],
+and [`gitter`][gitter].
 
 ## Installation
 
@@ -66,5 +67,7 @@ Check if `url` is a badge.
 [sauce]: https://wiki.saucelabs.com/display/DOCS/Using+Status+Badges+and+the+Browser+Matrix+Widget+to+Monitor+Test+Results
 
 [coveralls]: https://coveralls.io
+
+[codecov-ci]: https://codecov.io
 
 [gitter]: https://gitter.im

@@ -14,6 +14,7 @@ var EXPRESSIONS = [
   /^https?:\/\/ci\.testling\.com(?:\/[^/]+){2}\.(?:svg|png)(?:\?|$)/,
   /^https?:\/\/saucelabs\.com\/(?:buildstatus|browser-matrix)\//,
   /^https?:\/\/coveralls\.io\/.*\/badge\.(?:svg|png)(?:\?|$)/,
+  /^https?:\/\/codecov.io\/gh(?:\/[^/]+){2}(?:\/branch\/[^/]+)?(?:\/graph)?\/badge\.svg/,
   /^https?:\/\/badges\.gitter\.im(?:\/.+){2}\.(?:svg|png)/
 ];
 

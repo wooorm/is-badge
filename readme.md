@@ -4,6 +4,7 @@ Check if `url` is a badge.  Supports [`shields.io`][shields],
 [`travis-ci`][travis-ci], [`david-dm`][david], [`nodei.co`][nodei],
 [`inch-ci`][inch], [`fury.io`][fury], [`testling`][testling],
 [`saucelabs`][sauce], [`coveralls`][coveralls], [`codecov`][codecov-ci],
+[`issuestats`][issuestats], [`codeclimate`][codeclimate],
 and [`gitter`][gitter].
 
 ## Installation
@@ -69,5 +70,9 @@ Check if `url` is a badge.
 [coveralls]: https://coveralls.io
 
 [codecov-ci]: https://codecov.io
+
+[issuestats]: http://issuestats.com
+
+[codeclimate]: https://codeclimate.com
 
 [gitter]: https://gitter.im

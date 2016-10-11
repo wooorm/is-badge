@@ -340,5 +340,121 @@ test('isBadge(url)', function (t) {
     st.end();
   });
 
+  t.test('codeclimate', function (st) {
+    st.equal(
+      isBadge('https://codeclimate.com/github/npm/marky-markdown.svg'),
+      true,
+      'ok: svg'
+    );
+
+    st.equal(
+      isBadge('https://codeclimate.com/github/npm/marky-markdown.png'),
+      true,
+      'ok: png'
+    );
+
+    st.equal(
+      isBadge('https://codeclimate.com/github/npm/marky-markdown/badges/gpa.svg'),
+      true,
+      'ok: svg w/ gpa'
+    );
+
+    st.equal(
+      isBadge('https://codeclimate.com/github/npm/marky-markdown/badges/issue_count.svg'),
+      true,
+      'ok: svg w/ issue count'
+    );
+
+    st.equal(
+      isBadge('https://codeclimate.com/github/npm/marky-markdown/badges/coverage.svg'),
+      true,
+      'ok: svg w/ coverage'
+    );
+
+    st.equal(
+      isBadge('https://codeclimate.com/github/npm/marky-markdown/badges/gpa.svg'),
+      true,
+      'ok: png w/ gpa'
+    );
+
+    st.equal(
+      isBadge('https://codeclimate.com/github/npm/marky-markdown/badges/issue_count.svg'),
+      true,
+      'ok: png w/ issue count'
+    );
+
+    st.equal(
+      isBadge('https://codeclimate.com/github/npm/marky-markdown/badges/coverage.svg'),
+      true,
+      'ok: png w/ coverage'
+    );
+
+    st.equal(
+      isBadge('https://codeclimate.com/github/npm/marky-markdown/badges.svg'),
+      false,
+      'not ok: svg: badges w/o type'
+    );
+
+    st.equal(
+      isBadge('https://codeclimate.com/github/npm/marky-markdown/badges.png'),
+      false,
+      'not ok: png: badges w/o type'
+    );
+
+    st.equal(
+      isBadge('https://codeclimate.com/github/npm/marky-markdown'),
+      false,
+      'not ok: w/o extension'
+    );
+
+    st.equal(
+      isBadge('https://codeclimate.com/github/npm/marky-markdown/badges/coverage'),
+      false,
+      'not ok: type w/o extension'
+    );
+
+    st.end();
+  });
+
+  t.test('issuestats', function (st) {
+    st.equal(
+      isBadge('http://issuestats.com/github/twbs/bootstrap/badge/issue'),
+      true,
+      'ok: issues'
+    );
+
+    st.equal(
+      isBadge('http://issuestats.com/github/twbs/bootstrap/badge/issue?style=flat'),
+      true,
+      'ok: issues w/ style'
+    );
+
+    st.equal(
+      isBadge('http://issuestats.com/github/twbs/bootstrap/badge/issue?style=flat-square'),
+      true,
+      'ok: issues w/ other style'
+    );
+
+    st.equal(
+      isBadge('http://issuestats.com/github/twbs/bootstrap/badge/pr'),
+      true,
+      'ok: PRs'
+    );
+
+    st.equal(
+      isBadge('http://issuestats.com/github/twbs/bootstrap/badge/pr?style=flat'),
+      true,
+      'ok: PRs w/ style'
+    );
+
+    st.equal(
+      isBadge('http://issuestats.com/github/microsoft/visualfsharp/badge/pr?style=flat-square'),
+      true,
+      'ok: PRs w/ other style'
+    );
+
+    st.end();
+  });
+
   t.end();
 });

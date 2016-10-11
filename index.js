@@ -14,7 +14,9 @@ var EXPRESSIONS = [
   /^https?:\/\/ci\.testling\.com(?:\/[^/]+){2}\.(?:svg|png)(?:\?|$)/,
   /^https?:\/\/saucelabs\.com\/(?:buildstatus|browser-matrix)\//,
   /^https?:\/\/coveralls\.io\/.*\/badge\.(?:svg|png)(?:\?|$)/,
-  /^https?:\/\/codecov.io\/gh(?:\/[^/]+){2}(?:\/branch\/[^/]+)?(?:\/graph)?\/badge\.svg/,
+  /^https?:\/\/codecov\.io\/gh(?:\/[^/]+){2}(?:\/branch\/[^/]+)?(?:\/graph)?\/badge\.svg/,
+  /^https?:\/\/codeclimate\.com\/github(?:\/[^/]+){2}(?:\/badges\/(gpa|issue_count|coverage))?\.(png|svg)(?:\?|$)/,
+  /^https?:\/\/issuestats\.com\/github(?:\/[^/]+){2}\/badge\/(pr|issue)\/?(?:\?|$)/,
   /^https?:\/\/badges\.gitter\.im(?:\/.+){2}\.(?:svg|png)/
 ];
 

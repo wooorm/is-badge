@@ -28,7 +28,7 @@ function isBadge(url) {
   var index = -1;
 
   if (typeof url !== 'string') {
-    throw new Error('is-badge expected string');
+    throw new TypeError('is-badge expected string');
   }
 
   while (++index < length) {

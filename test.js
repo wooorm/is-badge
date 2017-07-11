@@ -1,10 +1,8 @@
 'use strict';
 
-/* Dependencies. */
 var test = require('tape');
 var isBadge = require('./');
 
-/* Tests. */
 test('isBadge(url)', function (t) {
   t.throws(
     function () {

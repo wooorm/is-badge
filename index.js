@@ -1,9 +1,7 @@
 'use strict';
 
-/* Expose. */
 module.exports = isBadge;
 
-/* Expressions. */
 var EXPRESSIONS = [
   /^https?:\/\/img\.shields\.io/,
   /^https?:\/\/(?:(?:www|api|secure)\.)?travis-ci\.org\/.*\.(?:svg|png)(?:\?|$)/,
@@ -20,7 +18,6 @@ var EXPRESSIONS = [
   /^https?:\/\/badges\.gitter\.im(?:\/.+){2}\.(?:svg|png)/
 ];
 
-/* Constants. */
 var length = EXPRESSIONS.length;
 
 /* Check if `url` is a badge. */

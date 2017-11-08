@@ -1,7 +1,7 @@
 language: node_js
 node_js:
 - '4.0'
-- '8.0'
+- '9.0'
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   - provider: npm
@@ -10,7 +10,7 @@ deploy:
       secure: WDwb4q1scLg1QO+9u2+GDK9JVDw6oMSWFjvirpmLIr6ums9bbOaJsA7w5F2etIrr/kQwuWBUPfm8FPORbwX1nZeNMuOQSf9EXLzPjh1qA2UM002rDP4paAVVW7EBz5WYFY0ptASSc4Xw8x8GyZx1JsyrGNicXSEdL30zj8+lujoJ23IDwHUtrDev2zE1KQQdV1KCcGxXoGsa6wmZSl1KQgqKLFlhj1Djg6DBIF/Ha4QE8hrftXHtvQZ8tVAtXLrbZa0WM1s5RkTvjqFkskvLn3wo91Zh/cX3AQd0GWH96EvoHR59KO7RoIqc8petxWNytLnbSzQaH9I3v9vwKM+sGQGgR0Os82YtwMyD1WpSOzEEbuPWDf5N55MbB6q+rW/7uK2e4Z0FcaBJ40fvGyHgkvbY7/p44qGjbtRDAs61X1SPNkywmVnNtAuSQOgv0Kf713nmu2BOTNJw2uLurERmlhcNp6RmfydrlmlJODgSPeNLSpmlKWtSD+dRs0LKOG5MGxR5x+TC81Lu5YqGzrvc5eTpMw5EMrQUTnSzExAOLhLUnlE4NgQSZ+HfC0f7tE6afOtqHkh/ySiX96OOhp+G7pMkf/CeSzXip2uhFM64wKb0SVNeVOJjiypw2rNzlkMo5BjehgCke3b+cic9G49K9jb6MFOu6wKAtLMX8cchIMs=
     on:
       tags: true
-      node: '4.0'
+      node: '9.0'
   - provider: releases
     skip_cleanup: true
     api_key:
@@ -20,4 +20,4 @@ deploy:
       - "is-badge.min.js"
     on:
       tags: true
-      node: '8.0'
+      node: '9.0'

@@ -14,31 +14,31 @@ test('isBadge(url)', function (t) {
 
   t.test('travis', function (st) {
     st.equal(
-      isBadge('https://travis-ci.org/wooorm/foo.svg'),
+      isBadge('https://travis-ci.org/wooorm/example.svg'),
       true,
       'ok: project'
     );
 
     st.equal(
-      isBadge('https://secure.travis-ci.org/wooorm/foo.png'),
+      isBadge('https://secure.travis-ci.org/wooorm/example.png'),
       true,
       'ok: secure'
     );
 
     st.equal(
-      isBadge('https://api.travis-ci.org/wooorm/foo.png?branch=1.1.0'),
+      isBadge('https://api.travis-ci.org/wooorm/example.png?branch=1.1.0'),
       true,
       'ok: api'
     );
 
     st.equal(
-      isBadge('https://travis-ci.org/wooorm/foo.svg?branch=1.1.1'),
+      isBadge('https://travis-ci.org/wooorm/example.svg?branch=1.1.1'),
       true,
       'ok: branch'
     );
 
     st.equal(
-      isBadge('https://travis-ci.org/wooorm/foo'),
+      isBadge('https://travis-ci.org/wooorm/example'),
       false,
       'not ok: w/o extension'
     );
@@ -132,31 +132,31 @@ test('isBadge(url)', function (t) {
 
   t.test('inch-ci', function (st) {
     st.equal(
-      isBadge('https://inch-ci.org/github/wooorm/foo.svg?branch=master'),
+      isBadge('https://inch-ci.org/github/wooorm/example.svg?branch=master'),
       true,
       'ok: w/ branch'
     );
 
     st.equal(
-      isBadge('https://inch-ci.org/github/wooorm/foo.svg'),
+      isBadge('https://inch-ci.org/github/wooorm/example.svg'),
       true,
       'ok: svg extension'
     );
 
     st.equal(
-      isBadge('https://inch-ci.org/github/wooorm/foo.png'),
+      isBadge('https://inch-ci.org/github/wooorm/example.png'),
       true,
       'ok: png extension'
     );
 
     st.equal(
-      isBadge('https://inch-ci.org/github/wooorm/foo.svg?branch=master&style=shields'),
+      isBadge('https://inch-ci.org/github/wooorm/example.svg?branch=master&style=shields'),
       true,
       'ok: w/ branch and style'
     );
 
     st.equal(
-      isBadge('https://inch-ci.org/github/wooorm/foo'),
+      isBadge('https://inch-ci.org/github/wooorm/example'),
       false,
       'not ok: w/o extension'
     );
@@ -278,19 +278,19 @@ test('isBadge(url)', function (t) {
 
   t.test('gitter', function (st) {
     st.equal(
-      isBadge('https://badges.gitter.im/foo/bar.png'),
+      isBadge('https://badges.gitter.im/example/bar.png'),
       true,
       'ok: png'
     );
 
     st.equal(
-      isBadge('https://badges.gitter.im/foo/bar.svg'),
+      isBadge('https://badges.gitter.im/example/bar.svg'),
       true,
       'ok: svg'
     );
 
     st.equal(
-      isBadge('https://badges.gitter.im/foo/bar'),
+      isBadge('https://badges.gitter.im/example/bar'),
       false,
       'not ok: w/o extension'
     );
@@ -306,25 +306,25 @@ test('isBadge(url)', function (t) {
 
   t.test('codecov', function (st) {
     st.equal(
-      isBadge('https://codecov.io/gh/wooorm/afinn-111/branch/master/graph/badge.svg'),
+      isBadge('https://codecov.io/gh/wooorm/example/branch/master/graph/badge.svg'),
       true,
       'ok: svg'
     );
 
     st.equal(
-      isBadge('https://codecov.io/gh/wooorm/afinn-111/branch/master/graph/badge.png'),
+      isBadge('https://codecov.io/gh/wooorm/example/branch/master/graph/badge.png'),
       false,
       'not ok: png'
     );
 
     st.equal(
-      isBadge('https://codecov.io/gh/wooorm/afinn-111/graph/badge.svg'),
+      isBadge('https://codecov.io/gh/wooorm/example/graph/badge.svg'),
       true,
       'ok: without branch'
     );
 
     st.equal(
-      isBadge('https://codecov.io/gh/wooorm/afinn-111/badge.svg'),
+      isBadge('https://codecov.io/gh/wooorm/example/badge.svg'),
       true,
       'ok: without `graph`'
     );

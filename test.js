@@ -1,7 +1,7 @@
 'use strict';
 
 var test = require('tape');
-var isBadge = require('./');
+var isBadge = require('.');
 
 test('isBadge(url)', function (t) {
   t.throws(

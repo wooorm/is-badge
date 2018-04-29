@@ -18,11 +18,11 @@ npm install is-badge
 ## Usage
 
 ```js
-var isBadge = require('is-badge');
+var isBadge = require('is-badge')
 
-isBadge('https://img.shields.io/travis/joyent/node.svg'); // true
-isBadge('http://example.com');  // false
-isBadge(true); // [Error: is-badge expected string]
+isBadge('https://img.shields.io/travis/joyent/node.svg') // => true
+isBadge('http://example.com') // => false
+isBadge(true) // [Error: is-badge expected string]
 ```
 
 ## API

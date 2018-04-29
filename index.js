@@ -1,6 +1,6 @@
-'use strict';
+'use strict'
 
-module.exports = isBadge;
+module.exports = isBadge
 
 var EXPRESSIONS = [
   /^https?:\/\/img\.shields\.io/,
@@ -16,23 +16,23 @@ var EXPRESSIONS = [
   /^https?:\/\/codeclimate\.com\/github(?:\/[^/]+){2}(?:\/badges\/(gpa|issue_count|coverage))?\.(png|svg)(?:\?|$)/,
   /^https?:\/\/issuestats\.com\/github(?:\/[^/]+){2}\/badge\/(pr|issue)\/?(?:\?|$)/,
   /^https?:\/\/badges\.gitter\.im(?:\/.+){2}\.(?:svg|png)/
-];
+]
 
-var length = EXPRESSIONS.length;
+var length = EXPRESSIONS.length
 
 /* Check if `url` is a badge. */
 function isBadge(url) {
-  var index = -1;
+  var index = -1
 
   if (typeof url !== 'string') {
-    throw new TypeError('is-badge expected string');
+    throw new TypeError('is-badge expected string')
   }
 
   while (++index < length) {
     if (EXPRESSIONS[index].test(url)) {
-      return true;
+      return true
     }
   }
 
-  return false;
+  return false
 }

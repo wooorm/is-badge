@@ -30,14 +30,13 @@
     "xo": "^0.20.0"
   },
   "scripts": {
-    "build-md": "remark . -qfo",
+    "format": "remark . -qfo && prettier --write '**/*.js' && xo --fix",
     "build-bundle": "browserify index.js --bare -s isBadge > is-badge.js",
     "build-mangle": "esmangle is-badge.js > is-badge.min.js",
-    "build": "npm run build-md && npm run build-bundle && npm run build-mangle",
-    "lint": "xo",
-    "test-api": "node test.js",
+    "build": "npm run build-bundle && npm run build-mangle",
+    "test-api": "node test",
     "test-coverage": "nyc --reporter lcov tape test.js",
-    "test": "npm run build && npm run lint && npm run test-coverage"
+    "test": "npm run format && npm run build && npm run test-coverage"
   },
   "nyc": {
     "check-coverage": true,
@@ -45,8 +44,16 @@
     "functions": 100,
     "branches": 100
   },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "semi": false,
+    "trailingComma": "none"
+  },
   "xo": {
-    "space": true,
+    "prettier": true,
     "esnext": false,
     "rules": {
       "no-var": "off",

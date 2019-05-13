@@ -21,7 +21,7 @@ npm install is-badge
 var isBadge = require('is-badge')
 
 isBadge('https://img.shields.io/travis/joyent/node.svg') // => true
-isBadge('http://example.com') // => false
+isBadge('https://example.com') // => false
 isBadge(true) // [Error: is-badge expected string]
 ```
 
@@ -49,9 +49,9 @@ Check if `url` is a badge.
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
 
-[shields]: http://shields.io
+[shields]: https://shields.io
 
 [travis-ci]: https://docs.travis-ci.com/user/status-images/
 
@@ -61,7 +61,7 @@ Check if `url` is a badge.
 
 [inch]: https://inch-ci.org/help/badge
 
-[fury]: http://badge.fury.io
+[fury]: https://badge.fury.io
 
 [testling]: https://ci.testling.com/guide/quick_start#badge
 

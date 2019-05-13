@@ -20,7 +20,7 @@ var EXPRESSIONS = [
 
 var length = EXPRESSIONS.length
 
-/* Check if `url` is a badge. */
+// Check if `url` is a badge.
 function isBadge(url) {
   var index = -1
 

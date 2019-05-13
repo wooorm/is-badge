@@ -1,4 +1,9 @@
-# is-badge [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
+# is-badge
+
+[![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
+[![Downloads][downloads-badge]][downloads]
+[![Size][size-badge]][size]
 
 Check if `url` is a badge.  Supports [`shields.io`][shields],
 [`travis-ci`][travis-ci], [`david-dm`][david], [`nodei.co`][nodei],
@@ -37,13 +42,21 @@ Check if `url` is a badge.
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/wooorm/is-badge.svg
+[build-badge]: https://img.shields.io/travis/wooorm/is-badge.svg
 
-[travis]: https://travis-ci.org/wooorm/is-badge
+[build]: https://travis-ci.org/wooorm/is-badge
 
-[codecov-badge]: https://img.shields.io/codecov/c/github/wooorm/is-badge.svg
+[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/is-badge.svg
 
-[codecov]: https://codecov.io/github/wooorm/is-badge
+[coverage]: https://codecov.io/github/wooorm/is-badge
+
+[downloads-badge]: https://img.shields.io/npm/dm/is-badge.svg
+
+[downloads]: https://www.npmjs.com/package/is-badge
+
+[size-badge]: https://img.shields.io/bundlephobia/minzip/is-badge.svg
+
+[size]: https://bundlephobia.com/result?p=is-badge
 
 [npm]: https://docs.npmjs.com/cli/install
 

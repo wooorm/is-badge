@@ -15,7 +15,8 @@ var EXPRESSIONS = [
   /^https?:\/\/codecov\.io\/gh(?:\/[^/]+){2}(?:\/branch\/[^/]+)?(?:\/graph)?\/badge\.svg/,
   /^https?:\/\/codeclimate\.com\/github(?:\/[^/]+){2}(?:\/badges\/(gpa|issue_count|coverage))?\.(png|svg)(?:\?|$)/,
   /^https?:\/\/issuestats\.com\/github(?:\/[^/]+){2}\/badge\/(pr|issue)\/?(?:\?|$)/,
-  /^https?:\/\/badges\.gitter\.im(?:\/.+){2}\.(?:svg|png)/
+  /^https?:\/\/badges\.gitter\.im(?:\/.+){2}\.(?:svg|png)/,
+  /^https?:\/\/(?:www\.)?github\.com(?:\/[^/]+){2}\/workflows\/[^/]+\/badge\.svg(?:\?|$)/
 ]
 
 var length = EXPRESSIONS.length

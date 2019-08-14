@@ -5,12 +5,24 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-Check if `url` is a badge.  Supports [`shields.io`][shields],
-[`travis-ci`][travis-ci], [`david-dm`][david], [`nodei.co`][nodei],
-[`inch-ci`][inch], [`fury.io`][fury], [`testling`][testling],
-[`saucelabs`][sauce], [`coveralls`][coveralls], [`codecov`][codecov-ci],
-[`issuestats`][issuestats], [`codeclimate`][codeclimate],
-and [`gitter`][gitter].
+Check if `url` is a badge.
+
+Supports:
+
+*   [x] [`codeclimate`][codeclimate]
+*   [x] [`codecov`][codecov-ci]
+*   [x] [`coveralls`][coveralls]
+*   [x] [`david-dm`][david]
+*   [x] [`fury.io`][fury]
+*   [x] [`github.com` workflows][github]
+*   [x] [`gitter`][gitter]
+*   [x] [`inch-ci`][inch]
+*   [x] [`issuestats`][issuestats]
+*   [x] [`nodei.co`][nodei]
+*   [x] [`saucelabs`][sauce]
+*   [x] [`shields.io`][shields]
+*   [x] [`testling`][testling]
+*   [x] [`travis-ci`][travis-ci]
 
 ## Installation
 
@@ -64,28 +76,30 @@ Check if `url` is a badge.
 
 [author]: https://wooorm.com
 
-[shields]: https://shields.io
-
-[travis-ci]: https://docs.travis-ci.com/user/status-images/
-
-[david]: https://david-dm.org
-
-[nodei]: https://nodei.co
-
-[inch]: https://inch-ci.org/help/badge
-
-[fury]: https://badge.fury.io
-
-[testling]: https://ci.testling.com/guide/quick_start#badge
-
-[sauce]: https://wiki.saucelabs.com/display/DOCS/Using+Status+Badges+and+the+Browser+Matrix+Widget+to+Monitor+Test+Results
-
-[coveralls]: https://coveralls.io
+[codeclimate]: https://codeclimate.com
 
 [codecov-ci]: https://codecov.io
 
-[issuestats]: http://issuestats.com
+[coveralls]: https://coveralls.io
 
-[codeclimate]: https://codeclimate.com
+[david]: https://david-dm.org
+
+[fury]: https://badge.fury.io
+
+[github]: https://github.com
 
 [gitter]: https://gitter.im
+
+[inch]: https://inch-ci.org/help/badge
+
+[issuestats]: http://issuestats.com
+
+[nodei]: https://nodei.co
+
+[sauce]: https://wiki.saucelabs.com/display/DOCS/Using+Status+Badges+and+the+Browser+Matrix+Widget+to+Monitor+Test+Results
+
+[shields]: https://shields.io
+
+[testling]: https://ci.testling.com/guide/quick_start#badge
+
+[travis-ci]: https://docs.travis-ci.com/user/status-images/

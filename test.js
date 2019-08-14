@@ -468,5 +468,45 @@ test('isBadge(url)', function(t) {
     st.end()
   })
 
+  t.test('github workflow', function(st) {
+    st.equal(
+      isBadge(
+        'https://github.com/actions/toolkit/workflows/Main%20workflow/badge.svg'
+      ),
+      true,
+      'ok: workflow'
+    )
+
+    st.equal(
+      isBadge(
+        'http://github.com/actions/toolkit/workflows/Main%20workflow/badge.svg'
+      ),
+      true,
+      'ok: issues w/ http'
+    )
+
+    st.equal(
+      isBadge(
+        'https://www.github.com/actions/toolkit/workflows/Main%20workflow/badge.svg'
+      ),
+      true,
+      'ok: issues w/ www'
+    )
+
+    st.equal(
+      isBadge('https://github.com/actions/toolkit'),
+      false,
+      'not ok: repo'
+    )
+
+    st.equal(
+      isBadge('https://github.com/actions/toolkit/workflows/Main%20workflow'),
+      false,
+      'not ok: workflow'
+    )
+
+    st.end()
+  })
+
   t.end()
 })

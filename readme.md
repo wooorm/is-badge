@@ -24,15 +24,15 @@ Supports:
 *   [x] [`testling`][testling]
 *   [x] [`travis-ci`][travis-ci]
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install is-badge
 ```
 
-## Usage
+## Use
 
 ```js
 var isBadge = require('is-badge')

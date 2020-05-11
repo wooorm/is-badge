@@ -17,7 +17,6 @@ Supports:
 *   [x] [`github.com` workflows][github]
 *   [x] [`gitter`][gitter]
 *   [x] [`inch-ci`][inch]
-*   [x] [`issuestats`][issuestats]
 *   [x] [`nodei.co`][nodei]
 *   [x] [`saucelabs`][sauce]
 *   [x] [`shields.io`][shields]
@@ -91,8 +90,6 @@ Check if `url` is a badge.
 [gitter]: https://gitter.im
 
 [inch]: https://inch-ci.org/help/badge
-
-[issuestats]: http://issuestats.com
 
 [nodei]: https://nodei.co
 

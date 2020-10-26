@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-- lts/dubnium
-- node
+  - lts/dubnium
+  - node
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: releases
@@ -9,7 +9,7 @@ deploy:
   api_key:
     secure: NcOMy8LDirIqu5CeUXg8mxESTd3DTODpQbe0xJHgv2E+2mo/ADk4qzTra2kr2sFAzjKdISPXKqHrHbF+XS/kH5AEC86cZ92Jd/6sIRe237GYO86RpFEsSXegXitJe14Bk2JgWJbGSsU5iN+tP/pmWe9aVGwOwInwL5OZiDeCjhw+dewABdRpsih79bbtoBaFIg/YsIeIpndjW6bJVWhBuer0X2J990Pv2FonjDZVlOTLn+19v9ybYgoRlvcyc5buZ+kzRVhahx1x6edLMCnWJPjrCarZ0NWnvpled4UL+RRIaZNabbWCfgpJLNJ03eu3CyjADA5SlQxNKn/0OaSv7Ez+sSjL18qIcAm35bQSQzf7AfGX5FdVD5nK51ya6HKNys6dKT9nROo8yDK7A9TjarjNXoLZAkKdj+AlP4WqawpqkrWC6ANYaoiFdSMomBIaUs6xDx55zU5Vnf5Pqv8KwT6qEWmwbPfY5Tsh0rTL4ge91Wi2EfMR19aY2Zc4qCq4XX47bwirio3OaXoEJzIEFA6rnrWGHfpG2d1AkU+YSrii7H/4r05svGKo8LI/bt0X75Ch2HL5BvgOaOtqJtECZr2uA5CdtgeKh0WojetYSqUkoZgcEf8XYs7DtloG/ZnlqN+APo1JaOUOd9hWdj/LUkdMnG8OtOIg8GkO9Ym+JNg=
   file:
-    - "is-badge.js"
-    - "is-badge.min.js"
+    - 'is-badge.js'
+    - 'is-badge.min.js'
   on:
     tags: true

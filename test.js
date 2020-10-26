@@ -3,16 +3,16 @@
 var test = require('tape')
 var isBadge = require('.')
 
-test('isBadge(url)', function(t) {
+test('isBadge(url)', function (t) {
   t.throws(
-    function() {
+    function () {
       isBadge(true)
     },
     /Error: is-badge expected string/,
     'should fail when not given a string'
   )
 
-  t.test('travis', function(st) {
+  t.test('travis', function (st) {
     st.equal(
       isBadge('https://travis-ci.org/wooorm/example.svg'),
       true,
@@ -46,7 +46,7 @@ test('isBadge(url)', function(t) {
     st.end()
   })
 
-  t.test('shields.io', function(st) {
+  t.test('shields.io', function (st) {
     st.equal(
       isBadge('https://img.shields.io/travis/joyent/node.svg'),
       true,
@@ -86,7 +86,7 @@ test('isBadge(url)', function(t) {
     st.end()
   })
 
-  t.test('david-dm', function(st) {
+  t.test('david-dm', function (st) {
     st.equal(
       isBadge('https://david-dm.org/strongloop/express.svg?style=flat'),
       true,
@@ -108,7 +108,7 @@ test('isBadge(url)', function(t) {
     st.end()
   })
 
-  t.test('node-ico', function(st) {
+  t.test('node-ico', function (st) {
     st.equal(
       isBadge('https://nodei.co/npm/peerflix.png?downloads=true'),
       true,
@@ -132,7 +132,7 @@ test('isBadge(url)', function(t) {
     st.end()
   })
 
-  t.test('inch-ci', function(st) {
+  t.test('inch-ci', function (st) {
     st.equal(
       isBadge('https://inch-ci.org/github/wooorm/example.svg?branch=master'),
       true,
@@ -168,7 +168,7 @@ test('isBadge(url)', function(t) {
     st.end()
   })
 
-  t.test('fury.io', function(st) {
+  t.test('fury.io', function (st) {
     st.equal(isBadge('http://badge.fury.io/js/engine.io.svg'), true, 'ok')
 
     st.equal(
@@ -188,7 +188,7 @@ test('isBadge(url)', function(t) {
     st.end()
   })
 
-  t.test('testling-ci', function(st) {
+  t.test('testling-ci', function (st) {
     st.equal(isBadge('https://ci.testling.com/substack/dnode.png'), true, 'ok')
 
     st.equal(
@@ -206,7 +206,7 @@ test('isBadge(url)', function(t) {
     st.end()
   })
 
-  t.test('sauce-labs', function(st) {
+  t.test('sauce-labs', function (st) {
     st.equal(isBadge('https://saucelabs.com/buildstatus/vuejs'), true, 'ok')
 
     st.equal(
@@ -230,7 +230,7 @@ test('isBadge(url)', function(t) {
     st.end()
   })
 
-  t.test('coveralls', function(st) {
+  t.test('coveralls', function (st) {
     st.equal(
       isBadge('https://coveralls.io/repos/jquery/esprima/badge.png'),
       true,
@@ -268,7 +268,7 @@ test('isBadge(url)', function(t) {
     st.end()
   })
 
-  t.test('gitter', function(st) {
+  t.test('gitter', function (st) {
     st.equal(
       isBadge('https://badges.gitter.im/example/bar.png'),
       true,
@@ -292,7 +292,7 @@ test('isBadge(url)', function(t) {
     st.end()
   })
 
-  t.test('codecov', function(st) {
+  t.test('codecov', function (st) {
     st.equal(
       isBadge(
         'https://codecov.io/gh/wooorm/example/branch/master/graph/badge.svg'
@@ -330,7 +330,7 @@ test('isBadge(url)', function(t) {
     st.end()
   })
 
-  t.test('codeclimate', function(st) {
+  t.test('codeclimate', function (st) {
     st.equal(
       isBadge('https://codeclimate.com/github/npm/marky-markdown.svg'),
       true,
@@ -420,7 +420,7 @@ test('isBadge(url)', function(t) {
     st.end()
   })
 
-  t.test('issuestats', function(st) {
+  t.test('issuestats', function (st) {
     st.equal(
       isBadge('http://issuestats.com/github/twbs/bootstrap/badge/issue'),
       true,
@@ -468,7 +468,7 @@ test('isBadge(url)', function(t) {
     st.end()
   })
 
-  t.test('github workflow', function(st) {
+  t.test('github workflow', function (st) {
     st.equal(
       isBadge(
         'https://github.com/actions/toolkit/workflows/Main%20workflow/badge.svg'

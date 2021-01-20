@@ -54,9 +54,9 @@ Check if `url` is a badge.
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/is-badge.svg
+[build-badge]: https://github.com/wooorm/is-badge/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/is-badge
+[build]: https://github.com/wooorm/is-badge/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/is-badge.svg
 

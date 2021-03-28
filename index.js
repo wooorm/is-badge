@@ -1,8 +1,4 @@
-'use strict'
-
-module.exports = isBadge
-
-var EXPRESSIONS = [
+var expressions = [
   /^https?:\/\/img\.shields\.io/,
   /^https?:\/\/(?:(?:www|api|secure)\.)?travis-ci\.org\/.*\.(?:svg|png)(?:\?|$)/,
   /^https?:\/\/(?:www\.)?david-dm\.org(?:\/.+){2}\.(?:svg|png)/,
@@ -19,18 +15,16 @@ var EXPRESSIONS = [
   /^https?:\/\/(?:www\.)?github\.com(?:\/[^/]+){2}\/workflows\/[^/]+\/badge\.svg(?:\?|$)/
 ]
 
-var length = EXPRESSIONS.length
-
 // Check if `url` is a badge.
-function isBadge(url) {
+export function isBadge(url) {
   var index = -1
 
   if (typeof url !== 'string') {
     throw new TypeError('is-badge expected string')
   }
 
-  while (++index < length) {
-    if (EXPRESSIONS[index].test(url)) {
+  while (++index < expressions.length) {
+    if (expressions[index].test(url)) {
       return true
     }
   }

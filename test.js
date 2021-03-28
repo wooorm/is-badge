@@ -1,7 +1,5 @@
-'use strict'
-
-var test = require('tape')
-var isBadge = require('.')
+import test from 'tape'
+import {isBadge} from './index.js'
 
 test('isBadge(url)', function (t) {
   t.throws(

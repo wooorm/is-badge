@@ -26,6 +26,9 @@ Supports:
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -35,7 +38,7 @@ npm install is-badge
 ## Use
 
 ```js
-var isBadge = require('is-badge')
+import {isBadge} from 'is-badge'
 
 isBadge('https://img.shields.io/travis/joyent/node.svg') // => true
 isBadge('https://example.com') // => false
@@ -43,6 +46,9 @@ isBadge(true) // [Error: is-badge expected string]
 ```
 
 ## API
+
+This package exports the following identifiers: `isBadge`.
+There is no default export.
 
 ### `isBadge(url)`
 

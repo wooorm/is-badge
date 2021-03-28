@@ -4,6 +4,7 @@ import {isBadge} from './index.js'
 test('isBadge(url)', function (t) {
   t.throws(
     function () {
+      // @ts-ignore runtime
       isBadge(true)
     },
     /Error: is-badge expected string/,

@@ -15,7 +15,12 @@ var expressions = [
   /^https?:\/\/(?:www\.)?github\.com(?:\/[^/]+){2}\/workflows\/[^/]+\/badge\.svg(?:\?|$)/
 ]
 
-// Check if `url` is a badge.
+/**
+ * Check if `url` is a badge.
+ *
+ * @param {string} url
+ * @returns {boolean}
+ */
 export function isBadge(url) {
   var index = -1
 

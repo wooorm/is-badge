@@ -1,8 +1,6 @@
 .DS_Store
+*.d.ts
 *.log
-.nyc_output/
 coverage/
 node_modules/
-is-badge.js
-is-badge.min.js
 yarn.lock

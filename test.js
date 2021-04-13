@@ -87,19 +87,23 @@ test('isBadge(url)', function (t) {
 
   t.test('david-dm', function (st) {
     st.equal(
-      isBadge('https://david-dm.org/strongloop/express.svg?style=flat'),
+      isBadge('https://status.david-dm.org/strongloop/express.svg?style=flat'),
       true,
       'ok: flat'
     )
 
     st.equal(
-      isBadge('https://david-dm.org/strongloop/express.svg?style=flat-square'),
+      isBadge(
+        'https://status.david-dm.org/strongloop/express.svg?style=flat-square'
+      ),
       true,
       'ok: flat-square'
     )
 
     st.equal(
-      isBadge('https://david-dm.org/strongloop/express.svg?style=flat-square'),
+      isBadge(
+        'https://status.david-dm.org/strongloop/express.svg?style=flat-square'
+      ),
       true,
       'not ok: w/o extension'
     )

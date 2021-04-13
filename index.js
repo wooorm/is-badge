@@ -1,7 +1,7 @@
 var expressions = [
   /^https?:\/\/img\.shields\.io/,
   /^https?:\/\/(?:(?:www|api|secure)\.)?travis-ci\.org\/.*\.(?:svg|png)(?:\?|$)/,
-  /^https?:\/\/status\.david-dm\.org(?:\/.+){2}\.(?:svg|png)(?:\?|$)/,
+  /^https?:\/\/status\.david-dm\.org(?:\/.+){2}\.(?:svg|png)/,
   /^https?:\/\/(?:www\.)?nodei\.co(?:\/.+){2}\.(?:svg|png)(?:\?|$)/,
   /^https?:\/\/inch-ci\.org(?:\/.+){3}\.(?:svg|png)(?:\?|$)/,
   /^https?:\/\/badge\.fury\.io(?:\/[^/]+){2}\.(?:svg|png)(?:\?|$)/,

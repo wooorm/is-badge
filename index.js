@@ -1,4 +1,4 @@
-var expressions = [
+const expressions = [
   /^https?:\/\/img\.shields\.io/,
   /^https?:\/\/(?:(?:www|api|secure)\.)?travis-ci\.org\/.*\.(?:svg|png)(?:\?|$)/,
   /^https?:\/\/(?:www\.)?david-dm\.org(?:\/.+){2}\.(?:svg|png)/,
@@ -22,7 +22,7 @@ var expressions = [
  * @returns {boolean}
  */
 export function isBadge(url) {
-  var index = -1
+  let index = -1
 
   if (typeof url !== 'string') {
     throw new TypeError('is-badge expected string')

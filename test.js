@@ -507,5 +507,39 @@ test('isBadge(url)', (t) => {
     st.end()
   })
 
+  t.test('open collective', (st) => {
+    st.equal(
+      isBadge('https://opencollective.com/acme/sponsors/badge.svg'),
+      true,
+      'ok: sponsors'
+    )
+
+    st.equal(
+      isBadge('https://opencollective.com/acme/backers/badge.svg'),
+      true,
+      'ok: badges'
+    )
+
+    st.equal(
+      isBadge('http://opencollective.com/acme/sponsors/badge.svg'),
+      true,
+      'ok w/ http'
+    )
+
+    st.equal(
+      isBadge('https://www.opencollective.com/acme/sponsors/badge.svg'),
+      true,
+      'ok w/ www'
+    )
+
+    st.equal(
+      isBadge('https://www.opencollective.com/acme'),
+      false,
+      'not ok: project'
+    )
+
+    st.end()
+  })
+
   t.end()
 })

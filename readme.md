@@ -23,6 +23,7 @@ Supports:
 *   [x] [`shields.io`][shields]
 *   [x] [`testling`][testling]
 *   [x] [`travis-ci`][travis-ci]
+*   [x] `opencollective`
 
 ## Install
 

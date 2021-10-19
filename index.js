@@ -12,7 +12,8 @@ const expressions = [
   /^https?:\/\/codeclimate\.com\/github(?:\/[^/]+){2}(?:\/badges\/(gpa|issue_count|coverage))?\.(png|svg)(?:\?|$)/,
   /^https?:\/\/issuestats\.com\/github(?:\/[^/]+){2}\/badge\/(pr|issue)\/?(?:\?|$)/,
   /^https?:\/\/badges\.gitter\.im(?:\/.+){2}\.(?:svg|png)/,
-  /^https?:\/\/(?:www\.)?github\.com(?:\/[^/]+){2}\/workflows\/[^/]+\/badge\.svg(?:\?|$)/
+  /^https?:\/\/(?:www\.)?github\.com(?:\/[^/]+){2}\/workflows\/[^/]+\/badge\.svg(?:\?|$)/,
+  /^https?:\/\/(?:www\.)?opencollective\.com\/[^/]+\/(sponsors|backers)\/badge.svg(?:\?|$)/
 ]
 
 /**

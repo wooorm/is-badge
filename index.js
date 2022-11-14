@@ -20,7 +20,9 @@ const expressions = [
  * Check if `url` is a badge.
  *
  * @param {string} url
+ *   URL to something.
  * @returns {boolean}
+ *   Whether `url` is a badge.
  */
 export function isBadge(url) {
   let index = -1
